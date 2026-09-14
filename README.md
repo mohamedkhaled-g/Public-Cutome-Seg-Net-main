@@ -15,14 +15,14 @@ The model processes 65,536-point 6-D point clouds (XYZ + RGB) and is trained wit
 
 ## Results
 
-| Model | Loss | Optimizer | LR | Weight Decay | Batch | Acc. | mIoU |
-|---|---|---|---|---|---|---|---|
-| HybridPointTransformer (Ours) | Focal | AdamW | 1e-4 | 1e-4 | 1 | 0.9271 | 0.8951 |
-| PointNet | Focal | AdamW | 2.4e-5 | 2.1e-5 | 1 | 0.70 | 0.45 |
-| PointNet++ | Focal | AdamW | 5.38e-4 | 1e-6 | 1 | 0.80 | 0.58 |
-| DGCNN | Focal | AdamW | 1.1e-5 | 4.2e-5 | 1 | 0.71 | 0.49 |
-| GNN (TeethGNN) | Cross-Entropy | Adam | 9.6e-5 | 8e-6 | 1 | 0.78 | 0.52 |
-| KPConv | Cross-Entropy | AdamW | 2.8e-5 | 7.49e-4 | 1 | 0.65 | 0.42 |
+| Model | Loss | Optimizer | LR | Weight Decay | Batch | Val. Acc. | Val. mIoU | Test Acc. | Test mIoU |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|
+| HybridPointTransformer (Ours) | Focal | AdamW | 1e-4 | 1e-4 | 1 | 0.9271 | 0.8951 | 0.9044 | 0.8777 |
+| PointNet | Focal | AdamW | 2.4e-5 | 2.1e-5 | 1 | 0.7000 | 0.4500 | 0.6083 | 0.3630 |
+| PointNet++ | Focal | AdamW | 5.38e-4 | 1e-6 | 1 | 0.8000 | 0.5800 | 0.7366 | 0.4944 |
+| DGCNN | Focal | AdamW | 1.1e-5 | 4.2e-5 | 1 | 0.7100 | 0.4900 | 0.6400 | 0.4100 |
+| GNN (TeethGNN) | Cross-Entropy | Adam | 9.6e-5 | 8e-6 | 1 | 0.7800 | 0.5200 | 0.7125 | 0.4762 |
+| KPConv | Cross-Entropy | AdamW | 2.8e-5 | 7.49e-4 | 1 | 0.6500 | 0.4200 | 0.6000 | 0.3800 |
 
 ## Requirements
 
